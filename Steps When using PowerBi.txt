@@ -1,0 +1,31 @@
+Steps When using PowerBi are:
+
+1. Connecting Data
+2. Analysis
+3. Data Cleaning (if required)
+4. Data modelling + DAX
+5. Create Report
+6. Deploy Power Bi Service
+
+
+One table
+
+--DimDate--
+1. Continous value
+2.No Gap
+3.No null
+4.No duplicate
+
+Month Name=FORMAT(DimDate[Date],"MMM")
+Month Number=Month(DimDate[Date])
+
+Sold Property = CALCULATE(COUNT('Power BI Data Set Demo xlsx - Real Estate Data'[Properites]),'Power BI Data Set Demo xlsx - Real Estate Data'[Properites]="Sales")
+
+
+Year wise, Month wise, Previous year Sales
+
+Time intelligence
+SameperiodLast
+Previous Year
+Date,Month, Year
+Calendar,Calenderauto
